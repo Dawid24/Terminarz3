@@ -24,13 +24,13 @@ public class NotatkaAdd extends JPanel implements ActionListener {
 	public NotatkaAdd() {
 		this.text = new JTextArea("Dodaj tekst");
 		this.text.setBounds(10, 10, 400, 190);
-		this.text.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK, 1));
+		this.text.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK, 2));
 		this.confirm = new JButton("Zapisz");
 		this.confirm.setBounds(10, 200, 400, 50);
 		this.confirm.addActionListener(this);
 	}
 	
-	/*ZAPIS WSPOLRZÊDNYCH DO PLIKU*/
+	/*ZAPIS DO PLIKU*/
 	public void zapisz(String tekst) {
 		String fileName = "Notatka.txt";
 		try(
@@ -64,8 +64,5 @@ public class NotatkaAdd extends JPanel implements ActionListener {
 			String textArea = text.getText();
 			zapisz(textArea);
 		}
-		// TODO Auto-generated method stub
-		
 	}
-
 }

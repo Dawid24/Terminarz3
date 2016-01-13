@@ -14,6 +14,10 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 public class NotatkaEdit extends JPanel implements ActionListener {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JTextArea text;
 	private JButton update;
 	
@@ -21,13 +25,13 @@ public class NotatkaEdit extends JPanel implements ActionListener {
 	public NotatkaEdit() {
 		this.text = new JTextArea(odczytaj());
 		this.text.setBounds(10, 10, 400, 190);
-		this.text.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK, 1));
+		this.text.setBorder(javax.swing.BorderFactory.createLineBorder(Color.BLACK, 2));
 		this.update = new JButton("Uaktualnij");
 		this.update.setBounds(10, 200, 400, 50);
 		this.update.addActionListener(this);
 	}
 	
-	/*ZAPIS WSPOLRZÊDNYCH DO PLIKU*/
+	/*ZAPIS DO PLIKU*/
 	public void zapisz(String tekst) {
 		String fileName = "Notatka.txt";
 		try(

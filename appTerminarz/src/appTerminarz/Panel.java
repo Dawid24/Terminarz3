@@ -33,7 +33,7 @@ public class Panel extends JFrame {
         Menu appmenu = new Menu();
         setTitle(getClass().getSimpleName());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setBounds(70,70,1100,750);
+        setBounds(0,0,1100,750);
         Container contentPane = new JPanel();
         contentPane.setLayout(null);
         setContentPane(contentPane);
@@ -50,6 +50,7 @@ public class Panel extends JFrame {
             this.add(app.getButton(i));
         this.add(appmenu.getButton_note());
         this.add(appmenu.getButton_edit());
+        this.add(appmenu.getButton_plan());
     }
     
 }
