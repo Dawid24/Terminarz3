@@ -21,9 +21,7 @@ public class PlanAdd extends JPanel implements ActionListener {
 	private JLabel info_file; 
 	private JTextArea text;
 	private JLabel info_year;
-	
 	@SuppressWarnings("rawtypes")
-	
 	private JComboBox plan_year;
 	private JLabel info_month;
 	private JComboBox plan_month;
